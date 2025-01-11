@@ -1,0 +1,188 @@
+/* Primary Colors */
+:root {
+    /* Neutral Colors */
+    --white: #ffffff;
+    /* White */
+    --black: #000000;
+    /* Black */
+
+    --primary-blue: #122751;
+    /* Royal Blue */
+    --gradient-nav: linear-gradient(254deg, rgba(98, 98, 98, 1) 0%, rgba(62, 62, 62, 1) 15%, rgba(0, 0, 0, 1) 83%);
+    /* Gradient Navbar Bg */
+    --primary-yellow: #e6ba37;
+    /* Golden Yellow */
+    --gradient-bg: linear-gradient(to left, var(--white), #bac1c7);
+    /* Gradient Background */
+
+    /* Secondary Colors */
+    --secondary-gray: #64748B;
+    /* Slate Gray */
+    --secondary-light: #bac1c7;
+    /* Light Gray */
+
+    /* Accent Colors */
+    --accent-teal: linear-gradient(to right, #00635e, #003633);
+    /* Teal Green */
+    --accent-maroon: #420227;
+    /* Deep Maroon */
+
+    --transition: all 0.5s ease;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--gradient-bg);
+}
+
+/********************** Navbar styling **********************/
+nav {
+    background: var(--gradient-nav);
+    box-shadow: 0px 0px 80px 0.5px rgba(122, 122, 122, 0.7);
+}
+
+#navbarNav {
+    margin-left: 30px;
+}
+
+#navbarNav .nav-link {
+    color: var(--white);
+    margin-left: 10px;
+}
+
+#navbarNav .nav-link:hover {
+    color: var(--primary-yellow);
+    border-bottom: var(--primary-yellow) 1px solid;
+}
+
+/********************* End of Navbar ***********************/
+/********************** Header styling *********************/
+.header {
+    padding-top: 40px;
+    min-height: 88vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/header-4.jpg") center no-repeat;
+    color: var(--white);
+    align-items: center;
+}
+
+.about {
+    align-items: center;
+    text-align: center;
+}
+
+.about-content img {
+    width: 240px;
+    height: 170px;
+}
+
+/********************* End of Header ***********************/
+/********************* Main Content Design ***********************/
+/* section one */
+.section-one {
+    margin: 40px;
+    width: 100%;
+    min-height: 100vh;
+    display: inline-flex;
+}
+
+.sec-one-left {
+    width: 40%;
+    height: 100vh;
+    background: url("../images/project-main.jpg") center/cover no-repeat;
+    box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.75);
+    border: var(--black) 2px solid;
+}
+
+.sec-one-left div {
+    color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 30px;
+}
+
+.sec-one-left div h3 {
+    font-size: 25px;
+}
+
+.sec-one-left div p {
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+.sec-one-right {
+    width: 50%;
+    margin-left: 20px;
+}
+
+.sec-one-right h3 {
+    color: var(--lightGrey);
+    text-align: justify;
+}
+
+.sec-one-right p {
+    opacity: 0.9;
+    font-weight: 300;
+}
+
+.work-content {
+    margin: 0 ;
+}
+
+.work-imgs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+}
+
+.work-img-1 {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url("../images/porject-1.jpg") center/cover no-repeat;
+    height: 400px;
+    transition: var(--transition);
+    border: var(--black) 2px solid;
+}
+
+.work-img-2 {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url("../images/porject-2.jpg") center/cover no-repeat;
+    height: 400px;
+    transition: var(--transition);
+    border: var(--black) 2px solid;
+}
+
+.work-imgs div:hover {
+    box-shadow: 0 0 8px #000;
+    -webkit-box-shadow: 0 0 8px #000;
+    -moz-box-shadow: 0 0 8px #000;
+}
+
+/********************* End of Main Content ***********************/
+/********************** Responsive Design *********************/
+@media screen and (min-width: 2560px) {
+    .nav-link {
+        display: none;
+        font-size: 2.5rem;
+        margin: 0 10px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #navbarNav {
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    .header {
+        min-height: 50vh;
+    }
+}
+
+/********************* End ***********************/
