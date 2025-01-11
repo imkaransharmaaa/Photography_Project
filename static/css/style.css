@@ -193,6 +193,10 @@ nav {
         margin: 0 25px;
     }
 
+    .quote{
+        font-size: 12px;
+    }
+
     .section-one {
         display: contents;
     }
@@ -208,7 +212,7 @@ nav {
     }
 
     .sec-one-left div p {
-        font-size: 12px;
+        font-size: 10px;
         text-align: justify;
     }
 
@@ -223,7 +227,7 @@ nav {
     }
 
     .sec-one-right p {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .work-img-1 {
