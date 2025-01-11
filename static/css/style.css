@@ -41,6 +41,16 @@ body {
     background: var(--gradient-bg);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    text-align: justify;
+}
+
 /********************** Navbar styling **********************/
 nav {
     background: var(--gradient-nav);
@@ -78,7 +88,7 @@ nav {
 
 .about-content img {
     width: 240px;
-    height: 170px;
+    height: 200px;
 }
 
 /********************* End of Header ***********************/
@@ -86,13 +96,12 @@ nav {
 /* section one */
 .section-one {
     margin: 40px;
-    width: 100%;
     min-height: 100vh;
     display: inline-flex;
 }
 
 .sec-one-left {
-    width: 40%;
+    width: 47%;
     height: 100vh;
     background: url("../images/project-main.jpg") center/cover no-repeat;
     box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.75);
@@ -107,7 +116,7 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: 30px;
+    padding: 0 25px;
 }
 
 .sec-one-left div h3 {
@@ -116,29 +125,24 @@ nav {
 
 .sec-one-left div p {
     font-weight: 300;
-    opacity: 0.8;
 }
 
 .sec-one-right {
-    width: 50%;
-    margin-left: 20px;
+    width: 53%;
+    margin-left: 40px;
 }
 
 .sec-one-right h3 {
+    font-size: 21px;
     color: var(--lightGrey);
-    text-align: justify;
 }
 
 .sec-one-right p {
-    opacity: 0.9;
-    font-weight: 300;
-}
-
-.work-content {
-    margin: 0 ;
+    font-size: 16px;
 }
 
 .work-imgs {
+    margin: 25px 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 20px;
@@ -182,7 +186,58 @@ nav {
 
     .header {
         min-height: 50vh;
+        background-position: center;
     }
+
+    .about {
+        margin: 0 25px;
+    }
+
+    .section-one {
+        display: contents;
+    }
+
+    .sec-one-left {
+        margin: 20px;
+        width: 91%;
+        height: 30vh;
+    }
+
+    .sec-one-left div h3 {
+        font-size: 20px;
+    }
+
+    .sec-one-left div p {
+        font-size: 12px;
+        text-align: justify;
+    }
+
+    .sec-one-right {
+        width: 90%;
+        margin-left: 20px;
+    }
+
+    .sec-one-right h3 {
+        font-size: 17px;
+        color: var(--lightGrey);
+    }
+
+    .sec-one-right p {
+        font-size: 10px;
+    }
+
+    .work-img-1 {
+        height: 200px;
+    }
+
+    .work-img-2 {
+        height: 200px;
+    }
+
+    .work-imgs {
+        margin: 10px 0;
+    }
+
 }
 
 /********************* End ***********************/
