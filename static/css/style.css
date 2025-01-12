@@ -198,7 +198,8 @@ nav {
     }
 
     .section-one {
-        display: contents;
+        display: block;
+        align-items: center;
     }
 
     .sec-one-left {
@@ -231,11 +232,11 @@ nav {
     }
 
     .work-img-1 {
-        height: 200px;
+        height: 250px;
     }
 
     .work-img-2 {
-        height: 200px;
+        height: 250px;
     }
 
     .work-imgs {
