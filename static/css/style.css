@@ -169,6 +169,7 @@ nav {
 }
 
 /********************* End of Main Content ***********************/
+<<<<<<< HEAD
 
 
 .loading-page {
@@ -218,6 +219,8 @@ nav {
     margin-left: 20px;
     font-weight: bolder;
   }
+=======
+>>>>>>> c13d9774c7c04b749ca8c2bf1f841d57b30d96d3
 /********************** Responsive Design *********************/
 @media screen and (min-width: 2560px) {
     .nav-link {
